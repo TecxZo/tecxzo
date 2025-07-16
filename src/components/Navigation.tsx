@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-          <img src="/tecxzo/assets/companylogo.png" alt="Description" style={{ width: "20px", height: "20px" }}/>
+          <img src="assets/companylogo.png" alt="Description" style={{ width: "20px", height: "20px" }}/>
             <span className="text-xl font-bold text-white">TECXZO</span>
           </div>
           
