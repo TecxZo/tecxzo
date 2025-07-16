@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-            <img src="/tecxzo/assets/companylogo.png" alt="Description" style={{ width: "30px", height: "30px" }}/>
+            <img src="assets/companylogo.png" alt="Description" style={{ width: "30px", height: "30px" }}/>
               <span className="text-2xl font-bold">TECXZO</span>
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
