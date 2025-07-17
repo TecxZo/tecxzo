@@ -30,7 +30,6 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
           <img src="assets/companylogo.png" alt="Description" style={{ width: "20px", height: "20px" }}/>
-            <span className="text-xl font-bold text-white">TECXZO</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
