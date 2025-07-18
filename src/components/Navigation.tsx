@@ -71,7 +71,7 @@ const Navigation = () => {
                 style={{ width: "22px", height: "22px" }}
               />
               <span className="text-white font-bold text-lg tracking-wide hidden sm:inline dark:text-white">
-                TECXZO
+                TecxZo
               </span>
             </div>
             {/* Nav Items */}
