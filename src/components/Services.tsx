@@ -63,17 +63,17 @@ const Services = () => {
       id="services"
       className="py-20 bg-white dark:bg-black transition-colors duration-300"
     >
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             What We <span className="text-blue-600 dark:text-blue-400">Do</span>
           </h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
             From concept to deployment, we provide comprehensive technology
             solutions tailored to your business needs.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
@@ -85,10 +85,10 @@ const Services = () => {
               >
                 <service.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-base text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                 {service.description}
               </p>
               <div className="flex flex-wrap gap-2">

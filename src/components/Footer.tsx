@@ -9,9 +9,9 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-black text-gray-900 dark:text-white py-12 border-t border-gray-300 dark:border-white/10 transition-colors duration-300">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-gray-100 dark:bg-black text-gray-900 dark:text-white py-10 md:py-12 border-t border-gray-300 dark:border-white/10 transition-colors duration-300">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
@@ -146,7 +146,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-300 dark:border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-300 dark:border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
           <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Tecxzo. All rights reserved.
           </p>

@@ -50,18 +50,18 @@ const Products = () => {
       id="products"
       className="py-20 bg-white dark:bg-black transition-colors duration-300"
     >
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Our{" "}
             <span className="text-blue-600 dark:text-blue-400">Products</span>
           </h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
             Real products serving real users. Here's what we've built and what
             we're working on.
           </p>
         </div>
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
           {products.map((product, index) => (
             <div
               key={index}
@@ -88,10 +88,10 @@ const Products = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {product.name}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                <p className="text-base text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
                   {product.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
