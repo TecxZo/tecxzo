@@ -76,7 +76,7 @@ const Contact = () => {
             </div>
             <div className="bg-white/5 backdrop-blur-lg p-6 rounded-xl">
               <h4 className="text-xl font-bold mb-3">Why Choose Tecxzo?</h4>
-              <ul className="space-y-2 text-sm text-gray-200">
+              <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-white rounded-full"></div>
                   <span>Proven track record with real products</span>

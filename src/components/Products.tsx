@@ -119,15 +119,6 @@ const Products = () => {
             </div>
           ))}
         </div>
-        <div className="mt-12 text-center">
-          <a
-            href="#contact"
-            className="inline-flex items-center space-x-2 bg-gray-200 dark:bg-white/10 border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-300 dark:hover:bg-white/20 transition-all duration-300"
-          >
-            <span>Start Your Project</span>
-            <ArrowRight className="h-5 w-5" />
-          </a>
-        </div>
       </div>
     </section>
   );

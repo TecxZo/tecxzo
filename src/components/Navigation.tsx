@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Fingerprint, MapPin, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
     if (typeof window !== "undefined") {
@@ -24,15 +23,6 @@ const Navigation = () => {
       return newMode;
     });
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     // On mount, respect localStorage or system preference

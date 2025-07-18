@@ -95,7 +95,7 @@ const Services = () => {
                 {service.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 bg-gray-200 dark:bg-white/10 text-blue-600 dark:text-blue-300 text-sm rounded-full font-medium"
+                    className="px-3 py-1 bg-transparent border border-gray-300 dark:border-white/30 text-black dark:text-white text-sm rounded-full font-medium transition-colors"
                   >
                     {tech}
                   </span>
