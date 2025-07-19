@@ -52,9 +52,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14 md:h-20">
           {/* NavBar Pill Container (everything inside) */}
-          <div className="flex items-center justify-between w-full max-w-4xl mx-auto px-2 sm:px-6 py-1.5 md:py-2 rounded-full bg-black/80 dark:bg-black/80 shadow-lg backdrop-blur-md min-h-[44px] md:min-h-[64px]">
+          <div className="flex items-center justify-between w-full max-w-4xl mx-auto px-4 sm:px-6 py-1.5 md:py-2 rounded-full bg-black/80 dark:bg-black/80 shadow-lg backdrop-blur-md min-h-[44px] md:min-h-[64px]">
             {/* Logo */}
-            <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="flex items-center md:pl-0 pl-2">
               <img
                 src="assets/companylogo.png"
                 alt="Description"
@@ -62,7 +62,7 @@ const Navigation = () => {
                 className="block"
               />
               <span className="text-white font-bold text-lg tracking-wide inline dark:text-white">
-                TecxZo
+                ecxZo
               </span>
             </div>
             {/* Nav Items */}
@@ -107,7 +107,7 @@ const Navigation = () => {
               </button>
             </div>
             {/* Hamburger menu for mobile */}
-            <div className="flex md:hidden items-center">
+            <div className="flex md:hidden items-center pr-2">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="text-white hover:text-blue-400 transition-colors focus:outline-none"
