@@ -17,7 +17,9 @@
     "@fontsource/solway": "^5.2.6",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.7.0",
+    "router": "^2.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
