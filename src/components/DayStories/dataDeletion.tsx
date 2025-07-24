@@ -1,6 +1,6 @@
-import React from 'react';
 
-const DataDeletionPolicyDayStories: React.FC = () => {
+
+const DataDeletionPolicyDayStories = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white py-16 px-6">
       <div className="max-w-4xl mx-auto bg-[#1f2937] p-10 rounded-xl shadow-xl">
