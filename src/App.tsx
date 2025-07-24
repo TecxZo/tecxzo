@@ -11,6 +11,7 @@ import PrivacyPolicy from "./components/Tecxspend/PrivacyPolicy";
 import DataDeletionPolicy from "./components/Tecxspend/dataDeletion";
 import PrivacyPolicyDayStories from "./components/DayStories/privacyPolicy";
 import DataDeletionPolicyDayStories from "./components/DayStories/dataDeletion";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/tecxspend/dataDeletion" element={<DataDeletionPolicy />} />
         <Route path="/daystories/privacypolicy" element={<PrivacyPolicyDayStories />} />
         <Route path="/daystories/datadeletion" element={<DataDeletionPolicyDayStories />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
