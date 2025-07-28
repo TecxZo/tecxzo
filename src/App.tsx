@@ -12,6 +12,7 @@ import DataDeletionPolicy from "./components/Tecxspend/dataDeletion";
 import PrivacyPolicyDayStories from "./components/DayStories/privacyPolicy";
 import DataDeletionPolicyDayStories from "./components/DayStories/dataDeletion";
 import NotFound from "./components/NotFound";
+import { TechnologiesUsedSection } from "./components/technologies-used-section";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <About />
               <Services />
               <Products />
+              <TechnologiesUsedSection />
               <Contact />
               <Footer />
             </>

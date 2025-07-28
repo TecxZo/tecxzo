@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+// Utility function for merging Tailwind classes
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,8 +30,9 @@ const Navigation = () => {
       return newMode;
     });
   };
-
+  const [isScrolled, setIsScrolled] = useState(false)
   useEffect(() => {
+    
     // On mount, respect localStorage or system preference
     const savedTheme = localStorage.getItem("theme");
     if (
@@ -37,6 +45,13 @@ const Navigation = () => {
       document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, []);
 
   const scrollToSection = (sectionId: string) => {
@@ -48,10 +63,16 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6">
+    <nav className={cn('floating-navbar hidden md:flex items-center justify-between space-x-1',
+         'fixed top-6 left-1/2 transform -translate-x-1/2 z-50 px-6 transition-all duration-300 rounded-full',
+         isScrolled
+          ? 'scale-95 w-[60vw]'
+          : 'scale-100 w-[90vw] max-w-5xl')}>
+      <div className=
+       {cn(
+          'container mx-auto px-4 sm:px-6',
+       )}>
         <div className="flex items-center justify-between h-14 md:h-20">
-          {/* NavBar Pill Container (everything inside) */}
           <div className="flex items-center justify-between w-full max-w-4xl mx-auto px-4 sm:px-6 py-1.5 md:py-2 rounded-full bg-black/80 dark:bg-black/80 shadow-lg backdrop-blur-md min-h-[44px] md:min-h-[64px]">
             {/* Logo */}
             <div className="flex items-center md:pl-0 pl-2">
