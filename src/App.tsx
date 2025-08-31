@@ -13,6 +13,8 @@ import PrivacyPolicyDayStories from "./components/DayStories/privacyPolicy";
 import DataDeletionPolicyDayStories from "./components/DayStories/dataDeletion";
 import NotFound from "./components/NotFound";
 import { TechnologiesUsedSection } from "./components/technologies-used-section";
+import PrivacyPolicyFixHomeBusiness from "./components/FHBusiness/privacyPolicy";
+import DataDeletionFixHome from "./components/FHBusiness/dataDeletion";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
         <Route path="/tecxspend/dataDeletion" element={<DataDeletionPolicy />} />
         <Route path="/daystories/privacypolicy" element={<PrivacyPolicyDayStories />} />
         <Route path="/daystories/datadeletion" element={<DataDeletionPolicyDayStories />} />
+        <Route path="/fixhomebusiness/privacypolicy" element={<PrivacyPolicyFixHomeBusiness />} />
+        <Route path="/fixhomebusiness/datadeletion" element={<DataDeletionFixHome />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
