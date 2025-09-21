@@ -34,8 +34,8 @@ const About = () => {
                 <div className="text-xs opacity-90">Projects Delivered</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">50+</div>
-                <div className="text-sm opacity-90">App Downloads</div>
+                <div className="text-3xl font-bold">5+</div>
+                <div className="text-sm opacity-90">Collaboration</div>
               </div>
             </div>
           </div>

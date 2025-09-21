@@ -27,7 +27,7 @@ function App() {
               <Navigation />
               <Hero />
               <div className="flex justify-center bg-transparent p-0 m-0">
-                <AdBanner />
+              <AdBanner />
               </div>
               <About />
               <Services />
