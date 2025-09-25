@@ -9,8 +9,6 @@ import AdBanner from "./components/adBanner";
 import { Route, Routes } from "react-router-dom";
 import PrivacyPolicy from "./components/Tecxspend/PrivacyPolicy";
 import DataDeletionPolicy from "./components/Tecxspend/dataDeletion";
-import PrivacyPolicyDayStories from "./components/DayStories/privacyPolicy";
-import DataDeletionPolicyDayStories from "./components/DayStories/dataDeletion";
 import NotFound from "./components/NotFound";
 import { TechnologiesUsedSection } from "./components/technologies-used-section";
 import PrivacyPolicyFixHomeBusiness from "./components/FHBusiness/privacyPolicy";
@@ -40,8 +38,6 @@ function App() {
         />
         <Route path="/tecxspend/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/tecxspend/dataDeletion" element={<DataDeletionPolicy />} />
-        <Route path="/daystories/privacypolicy" element={<PrivacyPolicyDayStories />} />
-        <Route path="/daystories/datadeletion" element={<DataDeletionPolicyDayStories />} />
         <Route path="/fixhomebusiness/privacypolicy" element={<PrivacyPolicyFixHomeBusiness />} />
         <Route path="/fixhomebusiness/datadeletion" element={<DataDeletionFixHome />} />
         <Route path="*" element={<NotFound />} />
