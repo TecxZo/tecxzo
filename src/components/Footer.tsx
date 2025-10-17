@@ -96,7 +96,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-700 dark:text-gray-300">
               <li>
                 <a
-                  href="#products"
+                  href="https://daystories.tecxzo.info/"
                   className="hover:text-blue-400 transition-colors"
                 >
                   DayStories

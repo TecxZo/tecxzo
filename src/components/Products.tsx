@@ -17,7 +17,7 @@ const Products = () => {
       status: "Live on Play Store",
       icon: Calendar,
       technologies: ["Flutter", "Firebase", "Cloud Storage"],
-      link: "https://play.google.com/store/apps/details?id=com.tecxzo.daystories",
+      link: "https://daystories.tecxzo.info",
       gradient: "from-orange-500 to-red-500",
     },
     {
@@ -109,9 +109,7 @@ const Products = () => {
                   className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-200 font-semibold transition-colors group-hover:translate-x-1"
                 >
                   <span>
-                    {product.name === "DayStories"
-                      ? "View on Play Store"
-                      : "Learn More"}
+                    {"Learn More"}
                   </span>
                   <ExternalLink className="h-4 w-4" />
                 </a>
